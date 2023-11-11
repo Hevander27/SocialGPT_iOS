@@ -1,85 +1,39 @@
-# APP_NAME_HERE
+<!-- (This is a comment) INSTRUCTIONS: Go through this page and fill out any **bolded** entries with their correct values.-->
 
-## Table of Contents
+# AND101 Milestone 1 - **Grocery Tracker**
 
-1. [Overview](#Overview)
-2. [Product Spec](#Product-Spec)
-3. [Wireframes](#Wireframes)
-4. [Schema](#Schema)
+Submitted by:
+- **Team Member 1 Hevander Da Costa**
+- **Team Member 2 Yernar Sadybekov**
 
-## Overview
 
-### Description
+Time spent: **3** hours spent in total
 
-[Description of your app]
+## Summary
 
-### App Evaluation
+This document provides an overview, project spec, and wireframes for our team's capstone project: An app that ** Mirrors the user-friendly interfaces of Amazon or Flipkart, with a focus on simplicity, all features are consolidated onto one screen.**
 
-[Evaluation of your app across the following attributes]
-- **Mobile**: The app provides a simple mobile experience of chatGPT that doesn't require browser usage 
-- **Story**: The app's story revolves around having access to chat gpt through a naitve iphone app
-- **Market**: The market for this app is everyone that avidly uses forms of search. 
-- ***Habit**: The app has the potential to become habit-forming due ease of answers for basic basic and complex question. However the app does not induce loitering 
-- **Scope**:  The technical challenge is moderate, with table view implementation and OpenAI API integration being key components. 
-## Product Spec
+If we had to describe this milestone in three (3) emojis, they would be: **😎🫡🤠**
 
-### 1. User Stories (Required and Optional)
+## Milestone Requirements
 
-**Required Must-have Stories**
+<!-- Please be sure to change the [ ] to [x] for any features you completed.  If a feature is not checked [x], you might miss the points for that item! -->
 
-* [fill in your required user stories here]
-* ...
+The following REQUIRED features are completed:
 
-**Optional Nice-to-have Stories**
+- [x] Creation of GitHub Organization and Group Project Repo
+- [x] Updated Course Portal group info with Group Name and App Description
 
-* [fill in your required user stories here]
-* ...
+The following REQUIRED files are included:
 
-### 2. Screen Archetypes
+- [x] Included 📄 `brainstorming.md`, which contains:
+  - [x] Our initial brainstorming ideas (6+ ideas)
+  - [x] 5-category evaluation of our top 3 ideas
+  - [x] Final app idea chosen
+- [x] Included 📄 `project_spec.md`, which contains:
+  - [x] App Overview: Description and evaluation
+  - [x] App Spec: User features, Chosen API(s), User Interactions
+  - [x] Wireframe image(s)
 
-- [ ] [list first screen here]
-* [list associated required story here]
-* ...
-list second screen here]
-* [list associated required story here]
-* ...
 
-### 3. Navigation
-
-**Tab Navigation** (Tab to Screen)
-
-* [fill out your first tab]
-* [fill out your second tab]
-* [fill out your third tab]
-
-**Flow Navigation** (Screen to Screen)
-
-- [ ] [list first screen here]
-* [list screen navigation here]
-* ...
-- [ ] [list second screen here]
-* [list screen navigation here]
-* ...
-
-## Wireframes
-
-[Add picture of your hand sketched wireframes in this section]
-<img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
-
-### [BONUS] Digital Wireframes & Mockups
-
-### [BONUS] Interactive Prototype
-
-## Schema 
-
-[This section will be completed in Unit 9]
-
-### Models
-
-[Add table of models]
-
-### Networking
-
-- [Add list of network requests by screen ]
-- [Create basic snippets for each Parse network request]
-- [OPTIONAL: List endpoints if using existing API such as Yelp]
+- [OPTIONAL: Best Buy API]
