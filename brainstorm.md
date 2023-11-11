@@ -5,21 +5,33 @@ Mobile App Dev - App Brainstorming
 2. [Top 3 New App Ideas](#Top-3-New-App-Ideas)
 3. [New App Idea (Chosen)](#New-App-Idea-Chosen)
 
-
-
-
+## New App Ideas
+1. Time Teller
+    - This helps the user to find the local time by entering his location and allows the user to have multiple Time clocks
+2. Trackr Clone 
+    - A clone of the trackr app we saw during our pre-work assignment before the start of this course
+3. Character Show
+    - An app which shows the user characters from one of the few provided anime series. User will have the option to select his favorite series and then the app will display characters from that series.
+4. Math Helper
+    - This app will help the user on basic math problems.
+5. Background Share
+    - This app will show user some random pictures based on their selection of the provided categories which the user can then download to apply as the background of their app. 
+6. Spotify Clone
+    - This idea was to make a simpler clone of the Spotify app
+7. Grocery Tracker
+    - This app will provide user a list of items available on a grocery store. The user can then select/deselect to store them on a cart and the app will then atlast provide the final price user will have to pay. The idea is similar to the existing apps like amazon/flipkart but just making the app simple.
 
 
 ## Top 3 New App Ideas - Evaluate and Categorize
-### Native iOS ChatGPT
-- **Mobile**: The app provides a simple mobile experience of chatGPT that doesn't require browser usage 
-- **Story**: The app's story revolves around having access to chat gpt through a naitve iphone app
-- **Market**: The market for this app is everyone that avidly uses forms of search. 
-- ***Habit**: The app has the potential to become habit-forming due ease of answers for basic basic and complex question. However the app does not induce loitering 
-- **Scope**:  The technical challenge is moderate, with table view implementation and OpenAI API integration being key components. 
+### Grocery Tracker
+- **Mobile**: The app provides a simple mobile experience by consolidating all grocery-related activities into a single screen. Its use of RecyclerView and integration with the Best Buy API enhances the dynamic and responsive nature of the app, making it more interactive than a static website.
+- **Story**: The app's story revolves around simplifying the grocery shopping experience. By seamlessly combining item selection, price calculation, and user interaction in one place.
+- **Market**: The market for this app is substantial, targeting anyone involved in grocery shopping. The potential user base is broad, encompassing a wide range of individuals who engage in regular grocery purchases.
+- ***Habit**: The app has the potential to become habit-forming due to its frequent use in daily or weekly grocery shopping routines. The user will be mainly consuming this app.
+- **Scope**:  The technical challenge is moderate, with RecyclerView implementation and Best Buy API integration being key components. A stripped-down version can still be interesting, focusing on core features. The product scope is well-defined, centered around a user-friendly grocery shopping experience.
 
 
-### Trackr 
+### Trackr Clone
 - **Mobile**: The app will provide a mobile experience that will provide a unique user experience as compared to a website since users will be able to interact with the application on-the-fly as more tasks are added to their daily schedules.
 - **Story**: The application's will allow users to add/view/delete tasks on the fly. People are generally going to have good impressions on this application since tracking tasks is quite important.
 - **Market**: Anyone who requires to keep track of their daily tasks and view them in a convinient manner. Mostly thinking of targeting schools and students which is a large market.
@@ -52,8 +64,6 @@ We have gone ahead and chosen the Grocery Tracker App
    - **Habit**: The app has the potential to become habit-forming due to its frequent use in daily or weekly grocery shopping routines. 
 
    - **Scope**: The technical challenge is moderate, with RecyclerView implementation and Best Buy API integration being key components. A stripped-down version can still be interesting, focusing on core features. The product scope is well-defined, centered around a user-friendly grocery shopping experience.
-
-
 
 
 
