@@ -33,7 +33,7 @@ The following REQUIRED files are included:
 - [x] Included 📄 `project_spec.md`, which contains:
   - [x] App Overview: Description and evaluation
   - [x] App Spec: User features, Chosen API(s), User Interactions
-  - [x] Wireframe image(s)
+  - [x] Wireframe image(s) **Seperate Files**
 
 
-- [OPTIONAL: Best Buy API]
+- [Best Buy API]
