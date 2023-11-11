@@ -16,13 +16,11 @@
 ### App Evaluation
 
 [Evaluation of your app across the following attributes]
-- **Category:**
-- **Mobile:**
-- **Story:**
-- **Market:**
-- **Habit:**
-- **Scope:**
-
+- **Mobile**: The app provides a simple mobile experience of chatGPT that doesn't require browser usage 
+- **Story**: The app's story revolves around having access to chat gpt through a naitve iphone app
+- **Market**: The market for this app is everyone that avidly uses forms of search. 
+- ***Habit**: The app has the potential to become habit-forming due ease of answers for basic basic and complex question. However the app does not induce loitering 
+- **Scope**:  The technical challenge is moderate, with table view implementation and OpenAI API integration being key components. 
 ## Product Spec
 
 ### 1. User Stories (Required and Optional)
