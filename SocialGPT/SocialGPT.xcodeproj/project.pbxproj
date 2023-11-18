@@ -1,0 +1,754 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		84F6EE542B08433100D56059 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F6EE532B08433100D56059 /* AppDelegate.swift */; };
+		84F6EE562B08433100D56059 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F6EE552B08433100D56059 /* SceneDelegate.swift */; };
+		84F6EE582B08433100D56059 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F6EE572B08433100D56059 /* ViewController.swift */; };
+		84F6EE5B2B08433100D56059 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F6EE592B08433100D56059 /* Main.storyboard */; };
+		84F6EE5D2B08433200D56059 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84F6EE5C2B08433200D56059 /* Assets.xcassets */; };
+		84F6EE602B08433200D56059 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F6EE5E2B08433200D56059 /* LaunchScreen.storyboard */; };
+		84F6EE6B2B08433200D56059 /* SocialGPTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F6EE6A2B08433200D56059 /* SocialGPTTests.swift */; };
+		84F6EE752B08433200D56059 /* SocialGPTUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F6EE742B08433200D56059 /* SocialGPTUITests.swift */; };
+		84F6EE772B08433200D56059 /* SocialGPTUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F6EE762B08433200D56059 /* SocialGPTUITestsLaunchTests.swift */; };
+		84F6EE842B08448B00D56059 /* SocialGPTApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F6EE832B08448B00D56059 /* SocialGPTApp.swift */; };
+		84F6EE882B08455600D56059 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F6EE872B08455600D56059 /* SwiftUIView.swift */; };
+		84F6EE8A2B08464900D56059 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F6EE892B08464900D56059 /* AuthView.swift */; };
+		84F6EE8C2B08468400D56059 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F6EE8B2B08468400D56059 /* AuthViewModel.swift */; };
+		84F6EE8E2B08469500D56059 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F6EE8D2B08469500D56059 /* AuthService.swift */; };
+		84F6EE912B085CAD00D56059 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84F6EE902B085CAD00D56059 /* GoogleService-Info.plist */; };
+		84F6EE942B0862D100D56059 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 84F6EE932B0862D100D56059 /* FirebaseAuth */; };
+		84F6EE962B0862D100D56059 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 84F6EE952B0862D100D56059 /* FirebaseFirestore */; };
+		84F6EE982B0862D100D56059 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 84F6EE972B0862D100D56059 /* FirebaseFirestoreSwift */; };
+		84F6EE9A2B0867EF00D56059 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F6EE992B0867EF00D56059 /* AppState.swift */; };
+		84F6EEA12B0870AC00D56059 /* ChatListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F6EEA02B0870AC00D56059 /* ChatListView.swift */; };
+		84F6EEA32B0870E600D56059 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F6EEA22B0870E600D56059 /* ContentView.swift */; };
+		84F6EEA52B08710C00D56059 /* ChatListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F6EEA42B08710C00D56059 /* ChatListViewModel.swift */; };
+		84F6EEA82B08832E00D56059 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F6EEA72B08832E00D56059 /* ChatView.swift */; };
+		84F6EEAB2B08834700D56059 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F6EEAA2B08834700D56059 /* ProfileView.swift */; };
+		84F6EEAD2B08849A00D56059 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F6EEAC2B08849A00D56059 /* ChatViewModel.swift */; };
+		84F6EEB02B088AEC00D56059 /* OpenAI in Frameworks */ = {isa = PBXBuildFile; productRef = 84F6EEAF2B088AEC00D56059 /* OpenAI */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84F6EE672B08433200D56059 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84F6EE482B08433100D56059 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84F6EE4F2B08433100D56059;
+			remoteInfo = SocialGPT;
+		};
+		84F6EE712B08433200D56059 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84F6EE482B08433100D56059 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84F6EE4F2B08433100D56059;
+			remoteInfo = SocialGPT;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		84F6EE502B08433100D56059 /* SocialGPT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialGPT.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84F6EE532B08433100D56059 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		84F6EE552B08433100D56059 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		84F6EE572B08433100D56059 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		84F6EE5A2B08433100D56059 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84F6EE5C2B08433200D56059 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84F6EE5F2B08433200D56059 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84F6EE612B08433200D56059 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84F6EE662B08433200D56059 /* SocialGPTTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SocialGPTTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84F6EE6A2B08433200D56059 /* SocialGPTTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialGPTTests.swift; sourceTree = "<group>"; };
+		84F6EE702B08433200D56059 /* SocialGPTUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SocialGPTUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84F6EE742B08433200D56059 /* SocialGPTUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialGPTUITests.swift; sourceTree = "<group>"; };
+		84F6EE762B08433200D56059 /* SocialGPTUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialGPTUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		84F6EE832B08448B00D56059 /* SocialGPTApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialGPTApp.swift; sourceTree = "<group>"; };
+		84F6EE872B08455600D56059 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		84F6EE892B08464900D56059 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		84F6EE8B2B08468400D56059 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		84F6EE8D2B08469500D56059 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		84F6EE902B085CAD00D56059 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		84F6EE992B0867EF00D56059 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		84F6EEA02B0870AC00D56059 /* ChatListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListView.swift; sourceTree = "<group>"; };
+		84F6EEA22B0870E600D56059 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		84F6EEA42B08710C00D56059 /* ChatListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListViewModel.swift; sourceTree = "<group>"; };
+		84F6EEA72B08832E00D56059 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		84F6EEAA2B08834700D56059 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		84F6EEAC2B08849A00D56059 /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84F6EE4D2B08433100D56059 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84F6EE942B0862D100D56059 /* FirebaseAuth in Frameworks */,
+				84F6EE962B0862D100D56059 /* FirebaseFirestore in Frameworks */,
+				84F6EEB02B088AEC00D56059 /* OpenAI in Frameworks */,
+				84F6EE982B0862D100D56059 /* FirebaseFirestoreSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84F6EE632B08433200D56059 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84F6EE6D2B08433200D56059 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		84F6EE472B08433100D56059 = {
+			isa = PBXGroup;
+			children = (
+				84F6EE522B08433100D56059 /* SocialGPT */,
+				84F6EE692B08433200D56059 /* SocialGPTTests */,
+				84F6EE732B08433200D56059 /* SocialGPTUITests */,
+				84F6EE512B08433100D56059 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		84F6EE512B08433100D56059 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84F6EE502B08433100D56059 /* SocialGPT.app */,
+				84F6EE662B08433200D56059 /* SocialGPTTests.xctest */,
+				84F6EE702B08433200D56059 /* SocialGPTUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84F6EE522B08433100D56059 /* SocialGPT */ = {
+			isa = PBXGroup;
+			children = (
+				84F6EE902B085CAD00D56059 /* GoogleService-Info.plist */,
+				84F6EE8F2B08482800D56059 /* Authentication */,
+				84F6EE532B08433100D56059 /* AppDelegate.swift */,
+				84F6EEA92B08833300D56059 /* Profile */,
+				84F6EEA62B08831F00D56059 /* Chat */,
+				84F6EE9F2B08704800D56059 /* ChatList */,
+				84F6EE552B08433100D56059 /* SceneDelegate.swift */,
+				84F6EE572B08433100D56059 /* ViewController.swift */,
+				84F6EE592B08433100D56059 /* Main.storyboard */,
+				84F6EE5C2B08433200D56059 /* Assets.xcassets */,
+				84F6EE5E2B08433200D56059 /* LaunchScreen.storyboard */,
+				84F6EE612B08433200D56059 /* Info.plist */,
+				84F6EE832B08448B00D56059 /* SocialGPTApp.swift */,
+				84F6EE872B08455600D56059 /* SwiftUIView.swift */,
+				84F6EEA22B0870E600D56059 /* ContentView.swift */,
+				84F6EE992B0867EF00D56059 /* AppState.swift */,
+			);
+			path = SocialGPT;
+			sourceTree = "<group>";
+		};
+		84F6EE692B08433200D56059 /* SocialGPTTests */ = {
+			isa = PBXGroup;
+			children = (
+				84F6EE6A2B08433200D56059 /* SocialGPTTests.swift */,
+			);
+			path = SocialGPTTests;
+			sourceTree = "<group>";
+		};
+		84F6EE732B08433200D56059 /* SocialGPTUITests */ = {
+			isa = PBXGroup;
+			children = (
+				84F6EE742B08433200D56059 /* SocialGPTUITests.swift */,
+				84F6EE762B08433200D56059 /* SocialGPTUITestsLaunchTests.swift */,
+			);
+			path = SocialGPTUITests;
+			sourceTree = "<group>";
+		};
+		84F6EE8F2B08482800D56059 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				84F6EE8B2B08468400D56059 /* AuthViewModel.swift */,
+				84F6EE8D2B08469500D56059 /* AuthService.swift */,
+				84F6EE892B08464900D56059 /* AuthView.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		84F6EE9F2B08704800D56059 /* ChatList */ = {
+			isa = PBXGroup;
+			children = (
+				84F6EEA02B0870AC00D56059 /* ChatListView.swift */,
+				84F6EEA42B08710C00D56059 /* ChatListViewModel.swift */,
+			);
+			path = ChatList;
+			sourceTree = "<group>";
+		};
+		84F6EEA62B08831F00D56059 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				84F6EEA72B08832E00D56059 /* ChatView.swift */,
+				84F6EEAC2B08849A00D56059 /* ChatViewModel.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		84F6EEA92B08833300D56059 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				84F6EEAA2B08834700D56059 /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84F6EE4F2B08433100D56059 /* SocialGPT */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84F6EE7A2B08433200D56059 /* Build configuration list for PBXNativeTarget "SocialGPT" */;
+			buildPhases = (
+				84F6EE4C2B08433100D56059 /* Sources */,
+				84F6EE4D2B08433100D56059 /* Frameworks */,
+				84F6EE4E2B08433100D56059 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SocialGPT;
+			packageProductDependencies = (
+				84F6EE932B0862D100D56059 /* FirebaseAuth */,
+				84F6EE952B0862D100D56059 /* FirebaseFirestore */,
+				84F6EE972B0862D100D56059 /* FirebaseFirestoreSwift */,
+				84F6EEAF2B088AEC00D56059 /* OpenAI */,
+			);
+			productName = SocialGPT;
+			productReference = 84F6EE502B08433100D56059 /* SocialGPT.app */;
+			productType = "com.apple.product-type.application";
+		};
+		84F6EE652B08433200D56059 /* SocialGPTTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84F6EE7D2B08433200D56059 /* Build configuration list for PBXNativeTarget "SocialGPTTests" */;
+			buildPhases = (
+				84F6EE622B08433200D56059 /* Sources */,
+				84F6EE632B08433200D56059 /* Frameworks */,
+				84F6EE642B08433200D56059 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84F6EE682B08433200D56059 /* PBXTargetDependency */,
+			);
+			name = SocialGPTTests;
+			productName = SocialGPTTests;
+			productReference = 84F6EE662B08433200D56059 /* SocialGPTTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		84F6EE6F2B08433200D56059 /* SocialGPTUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84F6EE802B08433200D56059 /* Build configuration list for PBXNativeTarget "SocialGPTUITests" */;
+			buildPhases = (
+				84F6EE6C2B08433200D56059 /* Sources */,
+				84F6EE6D2B08433200D56059 /* Frameworks */,
+				84F6EE6E2B08433200D56059 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84F6EE722B08433200D56059 /* PBXTargetDependency */,
+			);
+			name = SocialGPTUITests;
+			productName = SocialGPTUITests;
+			productReference = 84F6EE702B08433200D56059 /* SocialGPTUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84F6EE482B08433100D56059 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					84F6EE4F2B08433100D56059 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					84F6EE652B08433200D56059 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 84F6EE4F2B08433100D56059;
+					};
+					84F6EE6F2B08433200D56059 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 84F6EE4F2B08433100D56059;
+					};
+				};
+			};
+			buildConfigurationList = 84F6EE4B2B08433100D56059 /* Build configuration list for PBXProject "SocialGPT" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84F6EE472B08433100D56059;
+			packageReferences = (
+				84F6EE922B08616800D56059 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				84F6EEAE2B088AEC00D56059 /* XCLocalSwiftPackageReference "../../../Downloads/OpenAI-main" */,
+			);
+			productRefGroup = 84F6EE512B08433100D56059 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84F6EE4F2B08433100D56059 /* SocialGPT */,
+				84F6EE652B08433200D56059 /* SocialGPTTests */,
+				84F6EE6F2B08433200D56059 /* SocialGPTUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84F6EE4E2B08433100D56059 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84F6EE602B08433200D56059 /* LaunchScreen.storyboard in Resources */,
+				84F6EE912B085CAD00D56059 /* GoogleService-Info.plist in Resources */,
+				84F6EE5D2B08433200D56059 /* Assets.xcassets in Resources */,
+				84F6EE5B2B08433100D56059 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84F6EE642B08433200D56059 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84F6EE6E2B08433200D56059 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84F6EE4C2B08433100D56059 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84F6EEA12B0870AC00D56059 /* ChatListView.swift in Sources */,
+				84F6EEA32B0870E600D56059 /* ContentView.swift in Sources */,
+				84F6EE842B08448B00D56059 /* SocialGPTApp.swift in Sources */,
+				84F6EE582B08433100D56059 /* ViewController.swift in Sources */,
+				84F6EE8A2B08464900D56059 /* AuthView.swift in Sources */,
+				84F6EE9A2B0867EF00D56059 /* AppState.swift in Sources */,
+				84F6EEA82B08832E00D56059 /* ChatView.swift in Sources */,
+				84F6EEA52B08710C00D56059 /* ChatListViewModel.swift in Sources */,
+				84F6EE8C2B08468400D56059 /* AuthViewModel.swift in Sources */,
+				84F6EE542B08433100D56059 /* AppDelegate.swift in Sources */,
+				84F6EE562B08433100D56059 /* SceneDelegate.swift in Sources */,
+				84F6EE882B08455600D56059 /* SwiftUIView.swift in Sources */,
+				84F6EEAB2B08834700D56059 /* ProfileView.swift in Sources */,
+				84F6EEAD2B08849A00D56059 /* ChatViewModel.swift in Sources */,
+				84F6EE8E2B08469500D56059 /* AuthService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84F6EE622B08433200D56059 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84F6EE6B2B08433200D56059 /* SocialGPTTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84F6EE6C2B08433200D56059 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84F6EE752B08433200D56059 /* SocialGPTUITests.swift in Sources */,
+				84F6EE772B08433200D56059 /* SocialGPTUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84F6EE682B08433200D56059 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84F6EE4F2B08433100D56059 /* SocialGPT */;
+			targetProxy = 84F6EE672B08433200D56059 /* PBXContainerItemProxy */;
+		};
+		84F6EE722B08433200D56059 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84F6EE4F2B08433100D56059 /* SocialGPT */;
+			targetProxy = 84F6EE712B08433200D56059 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		84F6EE592B08433100D56059 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84F6EE5A2B08433100D56059 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		84F6EE5E2B08433200D56059 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84F6EE5F2B08433200D56059 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84F6EE782B08433200D56059 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		84F6EE792B08433200D56059 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84F6EE7B2B08433200D56059 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S5CJ4QD39Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SocialGPT/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Hevander27.SocialGPT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		84F6EE7C2B08433200D56059 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S5CJ4QD39Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SocialGPT/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Hevander27.SocialGPT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		84F6EE7E2B08433200D56059 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S5CJ4QD39Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Hevander27.SocialGPTTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SocialGPT.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SocialGPT";
+			};
+			name = Debug;
+		};
+		84F6EE7F2B08433200D56059 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S5CJ4QD39Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Hevander27.SocialGPTTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SocialGPT.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SocialGPT";
+			};
+			name = Release;
+		};
+		84F6EE812B08433200D56059 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S5CJ4QD39Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Hevander27.SocialGPTUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SocialGPT;
+			};
+			name = Debug;
+		};
+		84F6EE822B08433200D56059 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S5CJ4QD39Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Hevander27.SocialGPTUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SocialGPT;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84F6EE4B2B08433100D56059 /* Build configuration list for PBXProject "SocialGPT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84F6EE782B08433200D56059 /* Debug */,
+				84F6EE792B08433200D56059 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84F6EE7A2B08433200D56059 /* Build configuration list for PBXNativeTarget "SocialGPT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84F6EE7B2B08433200D56059 /* Debug */,
+				84F6EE7C2B08433200D56059 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84F6EE7D2B08433200D56059 /* Build configuration list for PBXNativeTarget "SocialGPTTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84F6EE7E2B08433200D56059 /* Debug */,
+				84F6EE7F2B08433200D56059 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84F6EE802B08433200D56059 /* Build configuration list for PBXNativeTarget "SocialGPTUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84F6EE812B08433200D56059 /* Debug */,
+				84F6EE822B08433200D56059 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		84F6EEAE2B088AEC00D56059 /* XCLocalSwiftPackageReference "../../../Downloads/OpenAI-main" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "../../../Downloads/OpenAI-main";
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		84F6EE922B08616800D56059 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.18.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		84F6EE932B0862D100D56059 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 84F6EE922B08616800D56059 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		84F6EE952B0862D100D56059 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 84F6EE922B08616800D56059 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		84F6EE972B0862D100D56059 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 84F6EE922B08616800D56059 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		84F6EEAF2B088AEC00D56059 /* OpenAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = OpenAI;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 84F6EE482B08433100D56059 /* Project object */;
+}
