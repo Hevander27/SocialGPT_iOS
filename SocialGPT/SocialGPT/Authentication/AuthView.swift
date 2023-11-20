@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Foundation
 
 struct AuthView: View {
     @ObservedObject var viewModel: AuthViewModel = AuthViewModel()
@@ -16,11 +17,13 @@ struct AuthView: View {
             Text("ChatGPT iOS App")
                 .font(.title)
                 .bold()
+            
             TextField("Email", text: $viewModel.emailText)
                 .padding()
                 .background(Color.gray.opacity(0.1))
                 .textInputAutocapitalization(.never)
                 .clipShape(RoundedRectangle(cornerRadius: 12))
+            
             if viewModel.isPasswordVisible {
                 SecureField("Passowrd", text: $viewModel.passwordText)
                     .padding()

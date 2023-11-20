@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Foundation
 
 struct ChatView: View {
     @StateObject var viewModel: ChatViewModel
@@ -22,11 +23,13 @@ struct ChatView: View {
                             scrollToBottom(scrollView: scrollView)
                         }
                 }
+                .navigationTitle(viewModel.chat?.topic ?? "New Chat")
                 .background(Color(uiColor: .systemGroupedBackground))
                 .listStyle(.plain)
             }
             messageInputView
         }
+        .navigationBarTitleDisplayMode(.inline)
         .onAppear() {
             viewModel.fetchData()
         }
@@ -84,11 +87,11 @@ struct ChatView: View {
                 .background(Color.gray.opacity(0.1))
                 .clipShape(RoundedRectangle(cornerRadius: 12))
                 .onSubmit {
-                    viewModel.sendMessage()
+                    sendMessage()
                 }
             
             Button {
-                viewModel.sendMessage()
+                sendMessage()
             } label:{
                 Text("Send")
                     .padding()
@@ -100,6 +103,17 @@ struct ChatView: View {
         }
         .padding()
     }
+    
+    func sendMessage() {
+        Task {
+            do {
+                try await viewModel.sendMessage()
+                
+            } catch {
+                print(error)
+            }
+        }
+    }
 }
     
 
@@ -107,6 +121,7 @@ struct ChatView: View {
 struct ChatView_Previews: PreviewProvider {
     static var previews: some View {
         ChatView(viewModel: .init(chatId: ""))
+            .environmentObject(AppState())
     }
 }
     

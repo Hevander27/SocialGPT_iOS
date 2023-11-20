@@ -13,10 +13,15 @@ class AuthService {
     
     let db = Firestore.firestore()
     
-    func checkUserExists(email: String) async throws -> Bool{
-        let documentSnapshot = db.collection("users").whereField("email", isEqualTo: email).count
-        let count = try await documentSnapshot.getAggregation(source: .server).count
-        return Int(truncating: count) > 0
+//    func checkUserExists(email: String) async throws -> Bool{
+//        let documentSnapshot = db.collection("users").whereField("email", isEqualTo: email).count
+//        let count = try await documentSnapshot.getAggregation(source: .server).count
+//        return Int(truncating: count) > 0
+//    }
+    
+    func checkUserExists(email: String) async throws -> Bool {
+        let documentSnapshot = try await db.collection("users").whereField("email", isEqualTo: email).getDocuments()
+        return !documentSnapshot.documents.isEmpty
     }
     
     func login(email: String, password: String, userExisits: Bool)  async throws -> AuthDataResult? {

@@ -8,63 +8,71 @@
 import Foundation
 import SwiftUI
 import FirebaseFirestore
+import FirebaseFirestoreSwift
+import OpenAI
 
 class ChatListViewModel: ObservableObject {
     
     @Published var chats: [AppChat] = []
     @Published var loadingState: ChatListState = .none
-    @Published var ishShowingProfileView = false
+    @Published var isShowingProfileView = false
+    //var user: String?
     
     private let db = Firestore.firestore()
     
-    func fetchData() {
-        self.chats = [
-            AppChat(id: "1", topic: "Some topic", model: .gpt3_5_turbo, lastMessageSent: Date(), owner: "123"),
-            AppChat(id: "2", topic: "Some other topic", model: .gpt4, lastMessageSent: Date(), owner: "123")
-        ]
-        self.loadingState = .resultFound
+    func fetchData(user: String?) {
+//        self.chats = [
+//            AppChat(id: "1", topic: "Some topic", model: .gpt3_5_turbo, lastMessageSent: Date(), owner: "123"),
+//            AppChat(id: "2", topic: "Some other topic", model: .gpt4, lastMessageSent: Date(), owner: "123")
+//        ]
+//        self.loadingState = .resultFound
         
         if loadingState == .none {
             loadingState = .loading
             db.collection("chats").whereField("owner", isEqualTo: user ?? "").addSnapshotListener { [weak self] querySnapshot, error in
-                guard let self = self, let documents = querySnapshot?.documents else {
-                    self?.loadingState = .noResult
+                guard let self = self, let documents = querySnapshot?.documents, !documents.isEmpty else {
+                    self?.loadingState = .noResults
                     return
                 }
-                
+                self.chats = documents.compactMap({ snapshot -> AppChat? in
+                    return try? snapshot.data(as: AppChat.self)
+                })
+                .sorted(by: {$0.lastMessageSent > $1.lastMessageSent})
+                self.loadingState = .resultFound
             }
         }
     }
     
     func createChat(user: String?) async throws -> String{
-        let document = db.collection("chats").addDocument(data: ["lastMessageSent": Date(), "owner": user ?? ""])
+        let document = try await db.collection("chats").addDocument(data: ["lastMessageSent": Date(), "owner": user ?? ""])
         return document.documentID
     }
     func showProfile() {
-        ishShowingProfileView = true
+        isShowingProfileView = true
     }
     func deleteChat(chat: AppChat) {
-        
+        guard let id = chat.id else {return}
+        db.collection("chats").document(id).delete()
     }
 }
 
 enum ChatListState {
     case none
     case loading
-    case noResult
+    case noResults
     case resultFound
 }
 
 struct  AppChat: Codable, Identifiable {
-    let id: String
+    @DocumentID var id: String?
     let topic: String?
-    let model: ChatModel?
-    let lastMessageSent: Date
+    var model: ChatModel?
+    let lastMessageSent: FirestoreDate
     let owner: String
     
     var lastMessageTimeAgo: String {
         let now = Date()
-        let components = Calendar.current.dateComponents([.second, .minute, .hour, .day, .month, .year], from: lastMessageSent, to: now)
+        let components = Calendar.current.dateComponents([.second, .minute, .hour, .day, .month, .year], from: lastMessageSent.date, to: now)
         
         let timeUnits: [(value: Int?, unit: String)] = [
             (components.year, "year"),
@@ -95,5 +103,38 @@ enum ChatModel: String, Codable, CaseIterable, Hashable {
         case .gpt4:
             return .purple
         }
+    }
+    var model: Model {
+        switch self {
+        case .gpt3_5_turbo:
+            return .gpt3_5Turbo
+        case .gpt4:
+            return .gpt4
+        }
+    }
+}
+
+struct FirestoreDate: Codable, Hashable, Comparable {
+    
+    var date: Date
+    
+    init(_ date: Date = Date()) {
+        self.date = date
+    }
+    
+    init(from decoder: Decoder) throws {
+        let container = try decoder.singleValueContainer()
+        let timestamp = try container.decode(Timestamp.self)
+        date = timestamp.dateValue()
+    }
+    
+    func encode(to encoder: Encoder) throws {
+        var container = encoder.singleValueContainer()
+        let timestamp = Timestamp(date: date)
+        try container.encode(timestamp)
+    }
+    
+    static func < (lhs: FirestoreDate, rhs: FirestoreDate) -> Bool {
+        lhs.date < rhs.date
     }
 }

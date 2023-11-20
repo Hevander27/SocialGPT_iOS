@@ -4,19 +4,20 @@
 //
 //  Created by Admin on 11/17/23.
 //
-
 import SwiftUI
+import Foundation
+
 
 struct ChatListView: View {
     @StateObject var viewModel = ChatListViewModel()
-    
+    @EnvironmentObject var appState: AppState
     var body: some View {
         
         Group {
             switch viewModel.loadingState {
             case .loading, .none:
                 Text("Loading chats...")
-            case .noResult:
+            case .noResults:
                 Text("No chats.")
             case .resultFound:
                 List {
@@ -42,7 +43,7 @@ struct ChatListView: View {
                             }
                         }
                         .swipeActions {
-                            Button(role: .descructive) {
+                            Button(role: .destructive) {
                                 viewModel.deleteChat(chat: chat)
                             } label: {
                                 Label("Delete", systemImage: "trash.fill")
@@ -52,6 +53,7 @@ struct ChatListView: View {
                 }
             }
         }
+        
         .navigationTitle("Chats")
         .toolbar(content: {
             ToolbarItem(placement: .navigationBarTrailing) {
@@ -66,29 +68,41 @@ struct ChatListView: View {
         .toolbar(content: {
             ToolbarItem(placement: .navigationBarTrailing) {
                 Button {
-                    viewModel.createChat()
+                    Task {
+                        do {
+                           let chatID = try await viewModel.createChat(user: appState.currentUser?.uid)
+                            appState.navigationPath.append(chatID)
+                        } catch {
+                            print(error)
+                        }
+                    }
+                    
                 } label: {
                     // create  chat
                     Image(systemName: "square.and.pencil")
                 }
             }
         })
-        .sheet(isPresented: viewModel.ishShowingProfileView) {
+        .sheet(isPresented: $viewModel.isShowingProfileView) {
             ProfileView()
         }
         .navigationDestination(for: String.self, destination: { chatId in ChatView(viewModel: .init(chatId: chatId))
         })
         .onAppear {
             if viewModel.loadingState == .none {
-                viewModel.fetchData()
+                viewModel.fetchData(user: appState.currentUser?.uid)
             }
         }
+     }
+}
+
+
+
+struct ChatListView_Previews: PreviewProvider {
+    static var previews: some View {
+        ChatListView()
+            //.environmentObject(AppState())
+
     }
 }
 
-struct ChatListView_Previews: PreviewProvider{
-    static var previews: some View {
-        ChatListView()
-    }
-    
-}

@@ -7,17 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		84F6EE542B08433100D56059 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F6EE532B08433100D56059 /* AppDelegate.swift */; };
-		84F6EE562B08433100D56059 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F6EE552B08433100D56059 /* SceneDelegate.swift */; };
-		84F6EE582B08433100D56059 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F6EE572B08433100D56059 /* ViewController.swift */; };
-		84F6EE5B2B08433100D56059 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F6EE592B08433100D56059 /* Main.storyboard */; };
-		84F6EE5D2B08433200D56059 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84F6EE5C2B08433200D56059 /* Assets.xcassets */; };
-		84F6EE602B08433200D56059 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F6EE5E2B08433200D56059 /* LaunchScreen.storyboard */; };
-		84F6EE6B2B08433200D56059 /* SocialGPTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F6EE6A2B08433200D56059 /* SocialGPTTests.swift */; };
-		84F6EE752B08433200D56059 /* SocialGPTUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F6EE742B08433200D56059 /* SocialGPTUITests.swift */; };
-		84F6EE772B08433200D56059 /* SocialGPTUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F6EE762B08433200D56059 /* SocialGPTUITestsLaunchTests.swift */; };
+		845DADC82B0B1BF6003A615A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845DADC72B0B1BF6003A615A /* ContentView.swift */; };
+		8476A6DE2B0B10F00042EA51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8476A6DD2B0B10F00042EA51 /* Assets.xcassets */; };
+		8476A7202B0B14B00042EA51 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8476A71F2B0B14B00042EA51 /* SceneDelegate.swift */; };
+		8476A7262B0B17800042EA51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8476A7252B0B17800042EA51 /* Main.storyboard */; };
 		84F6EE842B08448B00D56059 /* SocialGPTApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F6EE832B08448B00D56059 /* SocialGPTApp.swift */; };
-		84F6EE882B08455600D56059 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F6EE872B08455600D56059 /* SwiftUIView.swift */; };
 		84F6EE8A2B08464900D56059 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F6EE892B08464900D56059 /* AuthView.swift */; };
 		84F6EE8C2B08468400D56059 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F6EE8B2B08468400D56059 /* AuthViewModel.swift */; };
 		84F6EE8E2B08469500D56059 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F6EE8D2B08469500D56059 /* AuthService.swift */; };
@@ -27,7 +21,6 @@
 		84F6EE982B0862D100D56059 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 84F6EE972B0862D100D56059 /* FirebaseFirestoreSwift */; };
 		84F6EE9A2B0867EF00D56059 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F6EE992B0867EF00D56059 /* AppState.swift */; };
 		84F6EEA12B0870AC00D56059 /* ChatListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F6EEA02B0870AC00D56059 /* ChatListView.swift */; };
-		84F6EEA32B0870E600D56059 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F6EEA22B0870E600D56059 /* ContentView.swift */; };
 		84F6EEA52B08710C00D56059 /* ChatListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F6EEA42B08710C00D56059 /* ChatListViewModel.swift */; };
 		84F6EEA82B08832E00D56059 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F6EEA72B08832E00D56059 /* ChatView.swift */; };
 		84F6EEAB2B08834700D56059 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F6EEAA2B08834700D56059 /* ProfileView.swift */; };
@@ -53,28 +46,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		845DADC72B0B1BF6003A615A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8476A6DD2B0B10F00042EA51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../.Trash/Assets.xcassets; sourceTree = "<group>"; };
+		8476A71F2B0B14B00042EA51 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8476A7252B0B17800042EA51 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../../../../.Trash/Main.storyboard; sourceTree = "<group>"; };
 		84F6EE502B08433100D56059 /* SocialGPT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialGPT.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		84F6EE532B08433100D56059 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		84F6EE552B08433100D56059 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		84F6EE572B08433100D56059 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		84F6EE5A2B08433100D56059 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		84F6EE5C2B08433200D56059 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		84F6EE5F2B08433200D56059 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84F6EE612B08433200D56059 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84F6EE662B08433200D56059 /* SocialGPTTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SocialGPTTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		84F6EE6A2B08433200D56059 /* SocialGPTTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialGPTTests.swift; sourceTree = "<group>"; };
 		84F6EE702B08433200D56059 /* SocialGPTUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SocialGPTUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		84F6EE742B08433200D56059 /* SocialGPTUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialGPTUITests.swift; sourceTree = "<group>"; };
-		84F6EE762B08433200D56059 /* SocialGPTUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialGPTUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		84F6EE832B08448B00D56059 /* SocialGPTApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialGPTApp.swift; sourceTree = "<group>"; };
-		84F6EE872B08455600D56059 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		84F6EE892B08464900D56059 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
 		84F6EE8B2B08468400D56059 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		84F6EE8D2B08469500D56059 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		84F6EE902B085CAD00D56059 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		84F6EE992B0867EF00D56059 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		84F6EEA02B0870AC00D56059 /* ChatListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListView.swift; sourceTree = "<group>"; };
-		84F6EEA22B0870E600D56059 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		84F6EEA42B08710C00D56059 /* ChatListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListViewModel.swift; sourceTree = "<group>"; };
 		84F6EEA72B08832E00D56059 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		84F6EEAA2B08834700D56059 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
@@ -110,12 +96,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		842388CB2B0BB1B200DD1B1D /* Previews */ = {
+			isa = PBXGroup;
+			children = (
+				845DADC72B0B1BF6003A615A /* ContentView.swift */,
+				84F6EE832B08448B00D56059 /* SocialGPTApp.swift */,
+				84F6EE992B0867EF00D56059 /* AppState.swift */,
+				8476A71F2B0B14B00042EA51 /* SceneDelegate.swift */,
+			);
+			path = Previews;
+			sourceTree = "<group>";
+		};
 		84F6EE472B08433100D56059 = {
 			isa = PBXGroup;
 			children = (
 				84F6EE522B08433100D56059 /* SocialGPT */,
-				84F6EE692B08433200D56059 /* SocialGPTTests */,
-				84F6EE732B08433200D56059 /* SocialGPTUITests */,
 				84F6EE512B08433100D56059 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -133,41 +128,17 @@
 		84F6EE522B08433100D56059 /* SocialGPT */ = {
 			isa = PBXGroup;
 			children = (
+				842388CB2B0BB1B200DD1B1D /* Previews */,
 				84F6EE902B085CAD00D56059 /* GoogleService-Info.plist */,
 				84F6EE8F2B08482800D56059 /* Authentication */,
-				84F6EE532B08433100D56059 /* AppDelegate.swift */,
 				84F6EEA92B08833300D56059 /* Profile */,
 				84F6EEA62B08831F00D56059 /* Chat */,
 				84F6EE9F2B08704800D56059 /* ChatList */,
-				84F6EE552B08433100D56059 /* SceneDelegate.swift */,
-				84F6EE572B08433100D56059 /* ViewController.swift */,
-				84F6EE592B08433100D56059 /* Main.storyboard */,
-				84F6EE5C2B08433200D56059 /* Assets.xcassets */,
-				84F6EE5E2B08433200D56059 /* LaunchScreen.storyboard */,
 				84F6EE612B08433200D56059 /* Info.plist */,
-				84F6EE832B08448B00D56059 /* SocialGPTApp.swift */,
-				84F6EE872B08455600D56059 /* SwiftUIView.swift */,
-				84F6EEA22B0870E600D56059 /* ContentView.swift */,
-				84F6EE992B0867EF00D56059 /* AppState.swift */,
+				8476A7252B0B17800042EA51 /* Main.storyboard */,
+				8476A6DD2B0B10F00042EA51 /* Assets.xcassets */,
 			);
 			path = SocialGPT;
-			sourceTree = "<group>";
-		};
-		84F6EE692B08433200D56059 /* SocialGPTTests */ = {
-			isa = PBXGroup;
-			children = (
-				84F6EE6A2B08433200D56059 /* SocialGPTTests.swift */,
-			);
-			path = SocialGPTTests;
-			sourceTree = "<group>";
-		};
-		84F6EE732B08433200D56059 /* SocialGPTUITests */ = {
-			isa = PBXGroup;
-			children = (
-				84F6EE742B08433200D56059 /* SocialGPTUITests.swift */,
-				84F6EE762B08433200D56059 /* SocialGPTUITestsLaunchTests.swift */,
-			);
-			path = SocialGPTUITests;
 			sourceTree = "<group>";
 		};
 		84F6EE8F2B08482800D56059 /* Authentication */ = {
@@ -320,10 +291,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84F6EE602B08433200D56059 /* LaunchScreen.storyboard in Resources */,
+				8476A7262B0B17800042EA51 /* Main.storyboard in Resources */,
 				84F6EE912B085CAD00D56059 /* GoogleService-Info.plist in Resources */,
-				84F6EE5D2B08433200D56059 /* Assets.xcassets in Resources */,
-				84F6EE5B2B08433100D56059 /* Main.storyboard in Resources */,
+				8476A6DE2B0B10F00042EA51 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,18 +319,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				84F6EEA12B0870AC00D56059 /* ChatListView.swift in Sources */,
-				84F6EEA32B0870E600D56059 /* ContentView.swift in Sources */,
 				84F6EE842B08448B00D56059 /* SocialGPTApp.swift in Sources */,
-				84F6EE582B08433100D56059 /* ViewController.swift in Sources */,
 				84F6EE8A2B08464900D56059 /* AuthView.swift in Sources */,
 				84F6EE9A2B0867EF00D56059 /* AppState.swift in Sources */,
 				84F6EEA82B08832E00D56059 /* ChatView.swift in Sources */,
 				84F6EEA52B08710C00D56059 /* ChatListViewModel.swift in Sources */,
 				84F6EE8C2B08468400D56059 /* AuthViewModel.swift in Sources */,
-				84F6EE542B08433100D56059 /* AppDelegate.swift in Sources */,
-				84F6EE562B08433100D56059 /* SceneDelegate.swift in Sources */,
-				84F6EE882B08455600D56059 /* SwiftUIView.swift in Sources */,
+				8476A7202B0B14B00042EA51 /* SceneDelegate.swift in Sources */,
 				84F6EEAB2B08834700D56059 /* ProfileView.swift in Sources */,
+				845DADC82B0B1BF6003A615A /* ContentView.swift in Sources */,
 				84F6EEAD2B08849A00D56059 /* ChatViewModel.swift in Sources */,
 				84F6EE8E2B08469500D56059 /* AuthService.swift in Sources */,
 			);
@@ -370,7 +337,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84F6EE6B2B08433200D56059 /* SocialGPTTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,8 +344,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84F6EE752B08433200D56059 /* SocialGPTUITests.swift in Sources */,
-				84F6EE772B08433200D56059 /* SocialGPTUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,25 +361,6 @@
 			targetProxy = 84F6EE712B08433200D56059 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		84F6EE592B08433100D56059 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				84F6EE5A2B08433100D56059 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		84F6EE5E2B08433200D56059 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				84F6EE5F2B08433200D56059 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		84F6EE782B08433200D56059 /* Debug */ = {
