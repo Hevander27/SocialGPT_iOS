@@ -1,39 +1,65 @@
-<!-- (This is a comment) INSTRUCTIONS: Go through this page and fill out any **bolded** entries with their correct values.-->
+Original App Design Project - README Template
+APP_NAME_HERE
+Table of Contents
+Overview
+Product Spec
+Wireframes
+Schema
+Overview
+Description
+[Description of your app]
 
-# AND101 Milestone 1 - **Grocery Tracker**
+App Evaluation
+[Evaluation of your app across the following attributes]
 
-Submitted by:
-- **Team Member 1 Hevander Da Costa**
-- **Team Member 2 Yernar Sadybekov**
+Category:
+Mobile:
+Story:
+Market:
+Habit:
+Scope:
+Product Spec
+1. User Stories (Required and Optional)
+Required Must-have Stories
 
+[fill in your required user stories here]
+...
+Optional Nice-to-have Stories
 
-Time spent: **3** hours spent in total
+[fill in your required user stories here]
+...
+2. Screen Archetypes
+[list first screen here]
+[list associated required story here]
+... list second screen here]
+[list associated required story here]
+...
+3. Navigation
+Tab Navigation (Tab to Screen)
 
-## Summary
+[fill out your first tab]
+[fill out your second tab]
+[fill out your third tab]
+Flow Navigation (Screen to Screen)
 
-This document provides an overview, project spec, and wireframes for our team's capstone project: An app that ** Mirrors the user-friendly interfaces of Amazon or Flipkart, with a focus on simplicity, all features are consolidated onto one screen.**
+[list first screen here]
+[list screen navigation here]
+...
+[list second screen here]
+[list screen navigation here]
+...
+Wireframes
+[Add picture of your hand sketched wireframes in this section] [Add picture of your hand sketched wireframes in this section]
 
-If we had to describe this milestone in three (3) emojis, they would be: **😎🫡🤠**
+[BONUS] Digital Wireframes & Mockups
+[BONUS] Interactive Prototype
+Schema
+[This section will be completed in Unit 9]
 
-## Milestone Requirements
+Models
+[Add table of models]
 
-<!-- Please be sure to change the [ ] to [x] for any features you completed.  If a feature is not checked [x], you might miss the points for that item! -->
-
-The following REQUIRED features are completed:
-
-- [x] Creation of GitHub Organization and Group Project Repo
-- [x] Updated Course Portal group info with Group Name and App Description
-
-The following REQUIRED files are included:
-
-- [x] Included 📄 `brainstorming.md`, which contains:
-  - [x] Our initial brainstorming ideas (6+ ideas)
-  - [x] 5-category evaluation of our top 3 ideas
-  - [x] Final app idea chosen
-- [x] Included 📄 `project_spec.md`, which contains:
-  - [x] App Overview: Description and evaluation
-  - [x] App Spec: User features, Chosen API(s), User Interactions
-  - [x] Wireframe image(s) **Seperate Files**
-
-
-- [Best Buy API]
+Networking
+[Add list of network requests by screen ]
+[Create basic snippets for each Parse network request]
+[OPTIONAL: List endpoints if using existing API such as Yelp]
