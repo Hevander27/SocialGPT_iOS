@@ -15,6 +15,7 @@ Original App Design Project - README Template
 ### Description
 
 [SocialGPT is an app that brings ChatGPT to iOS natively. It give you the functionality of the ChatGPT in a portable format and at your fingertips. SocialGPT look to grow in features that would allow users to connect with their friends and colleages by searching up their username.SocialGPT's future interation will allow users to share their query history with their contacts]
+
 [Video: https://www.veed.io/view/74ba7326-0eda-4056-84b3-e18a383f7aa3?panel=share]
 ### App Evaluation
 
