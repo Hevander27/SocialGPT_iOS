@@ -99,7 +99,7 @@ The goal for the app is clear, chatgpt on web browser currently allows user to s
 ## Schema 
 <blockquote class="imgur-embed-pub" lang="en" data-id="a/bClkPQO"  >
   <a href="//imgur.com/a/bClkPQO">Captstone project: SocialGPT</a>
-</blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+</blockquote>
 <img src="//i.imgur.com/a/bClkPQO.gif" width=600>
 
 [This section will be completed in Unit 9]
