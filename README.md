@@ -26,7 +26,8 @@ Original App Design Project - README Template
 - **Story:** 
 [ChatGPT has revolutionized internet search. Although mobile versions of chatGPT exist none allow you to have a friends list to send your query history directly to friends and college. SocialGPT aim at minimizing the amount of time spent searching by helping user exchange queries that will other users get to the information they want faster]
 - **Market:** 
-[The app is amied at people who want to optimize there life witha personal assistant and people who are often in need of data on the spot as well as research who often need to collaborate on work]
+[The app is aimed at people who want to optimize there life with a personal assistant and people who are often in need of data on the spot as well as research who often need to collaborate on work.
+SocialGPT also helps to reduce the amount of queries needed and also the amount token for OpenAI through allowing you to search their queries.]
 - **Habit:** 
 [This app will more so be replacing the common act of searching through a search engine with searching on chatgpt. It will foster collaboration and sharing of information that can be relavant to others, this will foreseable decrease querying time.]
 - **Scope:**
@@ -40,7 +41,7 @@ The goal for the app is clear, chatgpt on web browser currently allows user to s
 
 **Required Must-have Stories**
 
-* [fill in your required user stories here]
+* [SocialGPT helps us search content from what our friend and colleages already looked up. Often times when you're in a group of people who interact often you end up search the same things, no need to do it twice...]
 * ...
 
 **Optional Nice-to-have Stories**
@@ -100,17 +101,25 @@ The goal for the app is clear, chatgpt on web browser currently allows user to s
 
 ### Models
 
-[Add table of models]
+[
+| ID | Name      | Email            | Password        | API Key                      |
+|----|-----------|------------------|-----------------|------------------------------|
+| 1  | John      | john@example.com | hashed_password | abcdefghijklmnopqrstuvwxyz   |
+| 2  | Jane      | jane@example.com | hashed_password | 1234567890                   |
+| 3  | Bob       | bob@example.com  | hashed_password | qwertyuiopasdfghjklzxcvbnm   |
+
+
+]
 
 ### Networking
 
 - [ChatGPT Querying Screen => Firebase,OpenAI, Login/Create User => Firebase, Profile View => OpenAI ]
-- [db.collection("chats").document(chatId).getDocument(as: AppChat.self),
-- db.collection("chats").document(chatId).collection("messages").getDocuments,
--  db.collection("chats").document(chatId).updateData(["model": selectedModel.rawValue]),
+- [ db.collection("chats").document(chatId).getDocument(as: AppChat.self),
+-   db.collection("chats").document(chatId).collection("messages").getDocuments,
+-   db.collection("chats").document(chatId).updateData(["model": selectedModel.rawValue]),
 -   db.collection("users").whereField("email", isEqualTo: email).getDocuments(),
 -   Auth.auth().signIn(withEmail: email, password: password),
 -   authService.login(email: emailText, password: passwordText, userExisits: userExists),
 -   authService.checkUserExists(email: emailText)]
   
-  - [OPTIONAL: List endpoints if using existing API such as Yelp]
+- [db.collection("chats").document(chatId).collection("messages").addDocument(from: message)]
