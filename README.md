@@ -92,14 +92,15 @@ The goal for the app is clear, chatgpt on web browser currently allows user to s
 <img src="https://github.com/Hevander27/ios_capstone/blob/SocialGPT/SocialGPT_WireFrame.png" width=600>
 
 
-<blockquote class="imgur-embed-pub" lang="en" data-id="a/bClkPQO">
-  <a href="//imgur.com/a/bClkPQO">Captstone project: SocialGPT</a>
-</blockquote>
 ### [BONUS] Digital Wireframes & Mockups
 
 ### [BONUS] Interactive Prototype
 
 ## Schema 
+<blockquote class="imgur-embed-pub" lang="en" data-id="a/bClkPQO"  >
+  <a href="//imgur.com/a/bClkPQO">Captstone project: SocialGPT</a>
+</blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+
 
 [This section will be completed in Unit 9]
 
