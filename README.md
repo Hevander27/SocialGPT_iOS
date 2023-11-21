@@ -25,7 +25,7 @@ Original App Design Project - README Template
 
 - **Story: ChatGPT has revolutionized internet search. Although mobile versions of chatGPT exist none allow you to have a friends list to send your query history directly to friends and college. SocialGPT aim at minimizing the amount of time spent searching by helping user exchange queries that will other users get to the information they want faster**
 - **Market:The app is amied at people who want to optimize there life witha personal assistant and people who are often in need of data on the spot as well as research who often need to collaborate on work**
-- **Habit:**
+- **Habit: This app will more so be replacing the common act of searching through a search engine with searching on chatgpt. It will foster collaboration and sharing of information that can be relavant to others, this will foreseable decrease querying time.**
 - **Scope:
 The app is mildy complex. It makes call you the OpenAI API and used Firebase for a cloud computing back end to manage the queries.
 SocialGPT is being released in MVP form, it will contain the main querying function allowing users to use chatGPT on the go, a future updat will have the ability to view in your contact is using the app.
