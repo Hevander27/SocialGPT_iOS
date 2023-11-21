@@ -105,9 +105,17 @@ The goal for the app is clear, chatgpt on web browser currently allows user to s
 | ID | Name      | Email            | Password        | API Key                      |
 |----|-----------|------------------|-----------------|------------------------------|
 | 1  | John      | john@example.com | hashed_password | abcdefghijklmnopqrstuvwxyz   |
-| 2  | Jane      | jane@example.com | hashed_password | 1234567890                   |
+| 2  | Jane      | jane@example.com | hashed_password | sk-wrX3qq9IbEI3FvZu3SjWT3B   |
 | 3  | Bob       | bob@example.com  | hashed_password | qwertyuiopasdfghjklzxcvbnm   |
 
+| ID | UserID | ThreadID | Query             |
+|----|--------|----------|-------------------|
+| 1  | 1      | 101      | Query 1           |
+| 2  | 1      | 101      | Query 2           |
+| 3  | 1      | 102      | Query 3           |
+| 4  | 2      | 103      | Query 4           |
+| 5  | 2      | 103      | Query 5           |
+| 6  | 3      | 104      | Query 6           |
 
 ]
 
