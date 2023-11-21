@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		845DADC82B0B1BF6003A615A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845DADC72B0B1BF6003A615A /* ContentView.swift */; };
-		8476A6DE2B0B10F00042EA51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8476A6DD2B0B10F00042EA51 /* Assets.xcassets */; };
 		8476A7202B0B14B00042EA51 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8476A71F2B0B14B00042EA51 /* SceneDelegate.swift */; };
-		8476A7262B0B17800042EA51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8476A7252B0B17800042EA51 /* Main.storyboard */; };
+		847F876F2B0BEE8700B5624E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 847F876E2B0BEE8700B5624E /* Main.storyboard */; };
+		847F87712B0C293E00B5624E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847F87702B0C293E00B5624E /* AppDelegate.swift */; };
 		84F6EE842B08448B00D56059 /* SocialGPTApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F6EE832B08448B00D56059 /* SocialGPTApp.swift */; };
 		84F6EE8A2B08464900D56059 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F6EE892B08464900D56059 /* AuthView.swift */; };
 		84F6EE8C2B08468400D56059 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F6EE8B2B08468400D56059 /* AuthViewModel.swift */; };
@@ -47,9 +47,9 @@
 
 /* Begin PBXFileReference section */
 		845DADC72B0B1BF6003A615A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		8476A6DD2B0B10F00042EA51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../.Trash/Assets.xcassets; sourceTree = "<group>"; };
 		8476A71F2B0B14B00042EA51 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8476A7252B0B17800042EA51 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../../../../.Trash/Main.storyboard; sourceTree = "<group>"; };
+		847F876E2B0BEE8700B5624E /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		847F87702B0C293E00B5624E /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../../../../../Downloads/AppDelegate.swift; sourceTree = "<group>"; };
 		84F6EE502B08433100D56059 /* SocialGPT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialGPT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84F6EE612B08433200D56059 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84F6EE662B08433200D56059 /* SocialGPTTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SocialGPTTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				845DADC72B0B1BF6003A615A /* ContentView.swift */,
+				847F87702B0C293E00B5624E /* AppDelegate.swift */,
 				84F6EE832B08448B00D56059 /* SocialGPTApp.swift */,
 				84F6EE992B0867EF00D56059 /* AppState.swift */,
 				8476A71F2B0B14B00042EA51 /* SceneDelegate.swift */,
@@ -135,8 +136,7 @@
 				84F6EEA62B08831F00D56059 /* Chat */,
 				84F6EE9F2B08704800D56059 /* ChatList */,
 				84F6EE612B08433200D56059 /* Info.plist */,
-				8476A7252B0B17800042EA51 /* Main.storyboard */,
-				8476A6DD2B0B10F00042EA51 /* Assets.xcassets */,
+				847F876E2B0BEE8700B5624E /* Main.storyboard */,
 			);
 			path = SocialGPT;
 			sourceTree = "<group>";
@@ -291,9 +291,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8476A7262B0B17800042EA51 /* Main.storyboard in Resources */,
 				84F6EE912B085CAD00D56059 /* GoogleService-Info.plist in Resources */,
-				8476A6DE2B0B10F00042EA51 /* Assets.xcassets in Resources */,
+				847F876F2B0BEE8700B5624E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,6 +325,7 @@
 				84F6EEA52B08710C00D56059 /* ChatListViewModel.swift in Sources */,
 				84F6EE8C2B08468400D56059 /* AuthViewModel.swift in Sources */,
 				8476A7202B0B14B00042EA51 /* SceneDelegate.swift in Sources */,
+				847F87712B0C293E00B5624E /* AppDelegate.swift in Sources */,
 				84F6EEAB2B08834700D56059 /* ProfileView.swift in Sources */,
 				845DADC82B0B1BF6003A615A /* ContentView.swift in Sources */,
 				84F6EEAD2B08849A00D56059 /* ChatViewModel.swift in Sources */,
