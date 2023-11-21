@@ -42,24 +42,24 @@ The goal for the app is clear, chatgpt on web browser currently allows user to s
 **Required Must-have Stories**
 
 * [SocialGPT helps us search content from what our friend and colleages already looked up. Often times when you're in a group of people who interact often you end up search the same things, no need to do it twice...]
-* ...
+
 
 **Optional Nice-to-have Stories**
 
 * [fill in your required user stories here]
-* ...
+
 
 ### 2. Screen Archetypes
 
 - [X] [Login/Registration Screen:]
 * [The screen promopts user to create their user using an email. If the user enters an email that is assocaited with an account, the screen will prompt for a password as well.]
-* ...
+
 - [X] [Search Screen:]
 * [This is the screen where users interact with ChatGPT3.5 or ChatGPT4.0, with SocialGPT the power of OpenAi as right at your fingertips.]
-* ...
+
 - [X] [List/Feed Screen:]
 * [This screen displays the list of various chat threads the user has had with ChatGPT.]
-* ...
+
 
 
 
