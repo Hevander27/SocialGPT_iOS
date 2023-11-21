@@ -58,18 +58,24 @@ list second screen here]
 
 **Tab Navigation** (Tab to Screen)
 
-* [fill out your first tab]
-* [fill out your second tab]
+* [GPT 3.5 Turbo/GPT 4]
+* [Chat list view]
 * [fill out your third tab]
 
 **Flow Navigation** (Screen to Screen)
 
-- [ ] [list first screen here]
-* [list screen navigation here]
+- [X] [Authentification: **Login/Create User**]
+* [=> Chat List Screen]
 * ...
-- [ ] [list second screen here]
-* [list screen navigation here]
+- [X] [Chat List Screen: **Profile Icon**]
+* [=> API Input Screen]
 * ...
+- [X] [Chat List Screen: Pen]
+* [=> ChatGPT Querying Screen]
+* ...
+- [X] [GPT Querying Screen: **< Chats**]
+* [=> ChatGPT Querying Screen]
+
 
 ## Wireframes
 
