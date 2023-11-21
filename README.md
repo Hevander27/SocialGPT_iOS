@@ -126,7 +126,10 @@ The goal for the app is clear, chatgpt on web browser currently allows user to s
 
 ### Networking
 
+[Add list of network requests by screen ]
 - [ChatGPT Querying Screen => Firebase,OpenAI, Login/Create User => Firebase, Profile View => OpenAI ]
+
+[Create basic snippets for each Parse network request]
 - [ db.collection("chats").document(chatId).getDocument(as: AppChat.self),
 -   db.collection("chats").document(chatId).collection("messages").getDocuments,
 -   db.collection("chats").document(chatId).updateData(["model": selectedModel.rawValue]),
@@ -134,5 +137,6 @@ The goal for the app is clear, chatgpt on web browser currently allows user to s
 -   Auth.auth().signIn(withEmail: email, password: password),
 -   authService.login(email: emailText, password: passwordText, userExisits: userExists),
 -   authService.checkUserExists(email: emailText)]
-  
+
+[OPTIONAL: List endpoints if using existing API such as Yelp] 
 - [db.collection("chats").document(chatId).collection("messages").addDocument(from: message)]
