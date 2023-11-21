@@ -19,17 +19,20 @@ Original App Design Project - README Template
 ### App Evaluation
 
 [Evaluation of your app across the following attributes]
-- **Category: Productivity** 
-- **Mobile: SocialGPT accesses you contact list friend who could be using the app, real-time response from the chatGPT api,option for up to date with GPT 4 access etc**
-
-
-- **Story: ChatGPT has revolutionized internet search. Although mobile versions of chatGPT exist none allow you to have a friends list to send your query history directly to friends and college. SocialGPT aim at minimizing the amount of time spent searching by helping user exchange queries that will other users get to the information they want faster**
-- **Market:The app is amied at people who want to optimize there life witha personal assistant and people who are often in need of data on the spot as well as research who often need to collaborate on work**
-- **Habit: This app will more so be replacing the common act of searching through a search engine with searching on chatgpt. It will foster collaboration and sharing of information that can be relavant to others, this will foreseable decrease querying time.**
-- **Scope:
-The app is mildy complex. It makes call you the OpenAI API and used Firebase for a cloud computing back end to manage the queries.
+- **Category:**
+- [Productivity]
+- **Mobile:**
+- [SocialGPT accesses you contact list friend who could be using the app, real-time response from the chatGPT api,option for up to date with GPT 4 access, etc]
+- **Story:** 
+[ChatGPT has revolutionized internet search. Although mobile versions of chatGPT exist none allow you to have a friends list to send your query history directly to friends and college. SocialGPT aim at minimizing the amount of time spent searching by helping user exchange queries that will other users get to the information they want faster]
+- **Market:** 
+[The app is amied at people who want to optimize there life witha personal assistant and people who are often in need of data on the spot as well as research who often need to collaborate on work]
+- **Habit:** 
+[This app will more so be replacing the common act of searching through a search engine with searching on chatgpt. It will foster collaboration and sharing of information that can be relavant to others, this will foreseable decrease querying time.]
+- **Scope:**
+[The app is mildy complex. It makes call you the OpenAI API and used Firebase for a cloud computing back end to manage the queries.
 SocialGPT is being released in MVP form, it will contain the main querying function allowing users to use chatGPT on the go, a future updat will have the ability to view in your contact is using the app.
-The goal for the app is clear, chatgpt on web browser currently allows user to sent a link to others but requires users to manually copy and paste to send to other users. SocialGPT aims to make this process easier by integraiting a contacts list. In the future I'll be adding a search feature that would allow connect user to input a search item on a serperate screen. The search will then highlight matching terms on shared queries.**
+The goal for the app is clear, chatgpt on web browser currently allows user to sent a link to others but requires users to manually copy and paste to send to other users. SocialGPT aims to make this process easier by integraiting a contacts list. In the future I'll be adding a search feature that would allow connect user to input a search item on a serperate screen. The search will then highlight matching terms on shared queries.]
 
 ## Product Spec
 
@@ -47,12 +50,17 @@ The goal for the app is clear, chatgpt on web browser currently allows user to s
 
 ### 2. Screen Archetypes
 
-- [ ] [list first screen here]
-* [list associated required story here]
+- [X] [Login/Registration Screen:]
+* [The screen promopts user to create their user using an email. If the user enters an email that is assocaited with an account, the screen will prompt for a password as well.]
 * ...
-list second screen here]
-* [list associated required story here]
+- [X] [Search Screen:]
+* [This is the screen where users interact with ChatGPT3.5 or ChatGPT4.0, with SocialGPT the power of OpenAi as right at your fingertips.]
 * ...
+- [X] [List/Feed Screen:]
+* [This screen displays the list of various chat threads the user has had with ChatGPT.]
+* ...
+
+
 
 ### 3. Navigation
 
@@ -70,7 +78,7 @@ list second screen here]
 - [X] [Chat List Screen: **Profile Icon**]
 * [=> API Input Screen]
 * ...
-- [X] [Chat List Screen: Pen]
+- [X] [Chat List Screen: **Pen**]
 * [=> ChatGPT Querying Screen]
 * ...
 - [X] [GPT Querying Screen: **< Chats**]
@@ -96,6 +104,13 @@ list second screen here]
 
 ### Networking
 
-- [Add list of network requests by screen ]
-- [Create basic snippets for each Parse network request]
-- [OPTIONAL: List endpoints if using existing API such as Yelp]
+- [ChatGPT Querying Screen => Firebase,OpenAI, Login/Create User => Firebase, Profile View => OpenAI ]
+- [db.collection("chats").document(chatId).getDocument(as: AppChat.self),
+- db.collection("chats").document(chatId).collection("messages").getDocuments,
+-  db.collection("chats").document(chatId).updateData(["model": selectedModel.rawValue]),
+-   db.collection("users").whereField("email", isEqualTo: email).getDocuments(),
+-   Auth.auth().signIn(withEmail: email, password: password),
+-   authService.login(email: emailText, password: passwordText, userExisits: userExists),
+-   authService.checkUserExists(email: emailText)]
+  
+  - [OPTIONAL: List endpoints if using existing API such as Yelp]
