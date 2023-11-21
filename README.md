@@ -69,19 +69,19 @@ The goal for the app is clear, chatgpt on web browser currently allows user to s
 
 * [GPT 3.5 Turbo/GPT 4]
 * [Chat list view]
-* [fill out your third tab]
+* [Profile]
 
 **Flow Navigation** (Screen to Screen)
 
 - [X] [Authentification: **Login/Create User**]
 * [=> Chat List Screen]
-* ...
+
 - [X] [Chat List Screen: **Profile Icon**]
 * [=> API Input Screen]
-* ...
+
 - [X] [Chat List Screen: **Pen**]
 * [=> ChatGPT Querying Screen]
-* ...
+
 - [X] [GPT Querying Screen: **< Chats**]
 * [=> ChatGPT Querying Screen]
 
