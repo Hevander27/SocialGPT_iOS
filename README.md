@@ -96,7 +96,7 @@ The goal for the app is clear, chatgpt on web browser currently allows user to s
 ## Schema 
 
 
-<img src='https://i.imgur.com/qcAW5mY.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://i.imgur.com/bYBWVC3.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 
 
