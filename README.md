@@ -98,10 +98,10 @@ The goal for the app is clear, chatgpt on web browser currently allows user to s
 ### [BONUS] Interactive Prototype
 
 ## Schema 
-<blockquote class="imgur-embed-pub" lang="en" data-id="a/bClkPQO"  >
-  <a href="//imgur.com/a/bClkPQO">Captstone project: SocialGPT</a>
-</blockquote>
-<img src="//i.imgur.com/a/bClkPQO.gif" width=600>
+
+
+<img src='https://i.imgur.com/bYBWVC3.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
 
 [This section will be completed in Unit 9]
 
