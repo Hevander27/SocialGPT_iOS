@@ -93,10 +93,6 @@ The goal for the app is clear, chatgpt on web browser currently allows user to s
 <img src="https://github.com/Hevander27/ios_capstone/blob/SocialGPT/SocialGPT_Wireframe.png" width=600>
 
 
-### [BONUS] Digital Wireframes & Mockups
-
-### [BONUS] Interactive Prototype
-
 ## Schema 
 
 
